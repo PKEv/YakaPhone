@@ -27,5 +27,9 @@ SOURCES += account.cpp \
            mainwindow.cpp \
            prefs.cpp \
            qrc_icons.cpp \
-           settingsdialog.cpp \
-           yakacallstyle.cpp
+           settingsdialog.cpp
+
+win32: LIBS += -L$$PWD/./ -llibiaxclient
+
+INCLUDEPATH += $$PWD/.
+DEPENDPATH += $$PWD/.
